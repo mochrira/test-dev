@@ -3,8 +3,9 @@ name: selvi_framework
 services:
   web:
     container_name: selvi_framework_container
-    image: mochrira/php:7.4.33-apache
+    image: mochrira/dev:1.0.0-apache
     volumes:
-      - ../src:/var/www/html
+      - ../:/workspace
+      - ./vhost.conf:/etc/apache2/conf.d/vhost.conf
     ports:
       - 8091:80

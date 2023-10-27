@@ -1,8 +1,8 @@
 {
     "name": "Selvi Framework",
     "dockerComposeFile": "compose.yml",
-    "workspaceFolder": "/var/www/html",
+    "workspaceFolder": "/workspace",
     "service": "web",
-    "remoteUser": "php",
+    "remoteUser": "devuser",
     "updateRemoteUserUID": false
 }

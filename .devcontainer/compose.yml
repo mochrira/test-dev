@@ -1,0 +1,10 @@
+version: "3.0"
+name: selvi_framework
+services:
+  web:
+    container_name: selvi_framework_container
+    image: mochrira/php:7.4.33-apache
+    volumes:
+      - ../src:/var/www/html
+    ports:
+      - 8091:80
